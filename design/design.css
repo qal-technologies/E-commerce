@@ -1,0 +1,131 @@
+/* CSS styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    user-zoom: fixed;
+    color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 75px;
+  border-bottom: 5px solid rgb(0, 220, 240);
+  flex-direction: row;
+}
+
+h1.logo {
+  margin: 10px;
+  float: left;
+  font-size: 50px;
+  font-weight:bold ;
+  user-select: none;
+}
+.highlight{
+    color: rgb(0, 220, 240);
+}
+span.search, span.chart, span.user, span.main{
+  font-weight: bold;
+    line-height: 60px;
+    display: flex;
+    float: right;
+    margin: 10px;
+    width: fit-content;
+}
+span.search:hover, span.chart:hover,  span.main:hover{
+    transition: ease-in-out 300ms;
+    font-size: 30px;
+    color: rgb(0, 220, 240);
+    user-select: none;
+    cursor: pointer;
+}
+
+img.user{
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(0, 220, 240);
+    border-radius: 25px;
+    display: flex;
+    float: right;
+    margin: 10px;
+}
+img.user:hover{
+    width: 40px;
+    height: 40px;
+    transition: ease-in-out 300ms;
+}
+/* input#searchInput{
+  display: flex;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  color: black;
+} */
+main {
+padding: 20px;
+display: flex;
+overflow: auto;
+flex-direction:row;
+}
+
+.product {
+  box-shadow: 1px 1px 2px grey;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  max-width: 30%;
+  max-height: 30%;
+  min-width: 20%;
+  min-height: 20%;
+}
+
+img.prod_img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 10px;
+  color: black;
+}
+
+.product p {
+  margin: 0;
+  color: black;
+}
+div.prod_header{
+    color: rgb(0, 220, 240);
+    display: block;
+    padding: 29px;
+    width: auto;
+    height: 10px;
+    text-align: center;
+    background-color: #333;
+    box-shadow: -0px 3px 4px grey;
+}
+button {
+  background-color: rgb(0, 151, 165);
+  color: #fff;
+  border: none;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:active, button:hover{
+    background-color: rgb(0, 140, 200);
+    font-weight: bolder;
+}
